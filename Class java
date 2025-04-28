@@ -1,0 +1,15 @@
+public class call {
+    static void sum(){
+        System.out.println("Hello world");    // static
+        
+    }
+    void harsh(){
+        System.out.println("Kemchoo");      //non static
+    }
+    public static void main(String[] args) {    // main method call by jvm
+        sum();
+
+        call obj = new call();
+        obj.harsh();
+    }
+}
