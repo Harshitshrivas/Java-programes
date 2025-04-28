@@ -1,0 +1,12 @@
+public class call2 {
+    static int sum(int a, int b){
+        System.out.println("Multily a and b is: ");
+        return a * b;
+    }
+    public static void main(String[] args) {
+
+       int res= sum(4, 4);
+       System.out.println(res);
+        
+    }
+}
