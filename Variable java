@@ -1,0 +1,15 @@
+public class calling3 {
+    
+    static int b=8;
+    int c = 9;               // global
+    public static void main(String[] args) {
+        // int a =5;
+        // System.out.println(a);   // local
+
+        System.out.println(b);
+
+        calling3 obj = new calling3();
+        System.out.println(obj.c);
+
+    }
+}
