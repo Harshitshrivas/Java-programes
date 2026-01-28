@@ -17,5 +17,6 @@ public class Stringpalind {
         }else{
             System.out.println("String is nottt");
         }
+        sc.close();
     }
 }
