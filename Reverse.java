@@ -18,7 +18,7 @@ public class Reverse {
         char[] arr = str.toCharArray();
         int leng = str.length();
 
-        for(int i=0 ; i<= leng/2; i++){    // first aur last value ko replace kare , swaping lga ka 
+        for(int i=0 ; i< leng/2; i++){    // first aur last value ko replace kare , swaping lga ka 
             char temp = arr[i];
             arr[i] = arr[leng - i - 1];       // ch[i] pehla hogya , length - 1 last hogya , aur length - i iss liya lagaye kyuki 
             arr[leng - i - 1] = temp;        //string aage bhi jaugi
