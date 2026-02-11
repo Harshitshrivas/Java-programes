@@ -18,12 +18,15 @@ public class SortColour2 {
            
            else if(arr[mid] == 1){  // If the element is 1, just move to the next element
             mid++;
-           }else{    // arr[mid] == 2  // If the element is 2, swap it with the element at high and decrement high
+           }
+
+           else{    // arr[mid] == 2  // If the element is 2, swap it with the element at high and decrement high
             int temp = arr[high];
             arr[high] = arr[mid];
             arr[mid] = temp;
             high --;
            }
+           
         }
         for(int i =0; i<arr.length; i++){  // Time complexity is O(n) and space complexity is O(1)
             System.out.print(arr[i] + " ");
