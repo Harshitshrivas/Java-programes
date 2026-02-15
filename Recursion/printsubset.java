@@ -24,6 +24,18 @@ public class printsubset {
 
     public static void main(String[] args) {
         int[] arr = { 1, 2, 3 };
-        printSubset(arr, 0, "");
+        System.out.println("Using backtracking");
+       printSubset(arr, 0, ""); // backtracking , O(2^n) time complexity, kyunki har element ke liye 2 choices hoti hai, add karna ya add nahi karna, aur O(n) space complexity, kyunki current string me n elements add ho sakte hai
+        int n = arr.length;
+         
+        System.out.println("Using bit manipulation");
+        for(int i = 0 ; i< (1<<n) ; i++){
+            for(int j =0; j<n ; j++){
+                if((i & (1 << j)) != 0){
+                   System.out.print(arr[j] + " ");
+                }
+            }
+            System.out.println( );
+        }
     }
 }
