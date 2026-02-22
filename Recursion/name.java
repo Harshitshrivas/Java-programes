@@ -3,7 +3,7 @@ public class name {
         if (n == 0) {
             return;
         }
-        System.out.println("Harshit"); 
+        System.out.println("Harshit"); // first we will print the name and then call the function for n-1, this way we will get the output in decreasing order from n to 1
         printname(n - 1);
     }
 
