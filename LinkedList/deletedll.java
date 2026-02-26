@@ -63,9 +63,44 @@ public class deletedll {
 
     }
 
-    public  void deleteatindex(int index){
+    public void deleteatindex(int index) {
 
-        
+        if (index < 0) {
+            System.out.println("Invalid index");
+            return;
+        }
+        if (head == null) {
+            System.out.println("List is Empty");
+            return;
+        }
+
+        if (index == 0) {
+            head = head.next;
+            if (head != null) {
+                head.prev = null;
+            }
+            return;
+        }
+
+        Node currNode = head;
+        int count = 0;
+
+        while (currNode != null && count < index) {
+            currNode = currNode.next;
+            count++;
+        }
+
+        if (currNode == null) {
+            System.out.println(" Index out of bounds");
+        } else {
+            if (currNode.prev != null) {
+                currNode.prev.next = currNode.next;
+            }
+            if (currNode.next != null) {
+                currNode.next.prev = currNode.prev;
+            }
+        }
+
     }
 
     public void printlist() {
@@ -101,6 +136,10 @@ public class deletedll {
         dll.insertbegin(4);
         dll.insertbegin(2);
         System.out.println("Original list:");
+        dll.printlist();
+
+        System.out.println("After deleting the node at index 1:");
+        dll.deleteatindex(1);
         dll.printlist();
     }
 }
