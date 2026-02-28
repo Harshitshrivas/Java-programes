@@ -40,6 +40,19 @@ public class reverseLL {
         head = prev;
     }
 
+    // recursive method to reverse the linked list
+
+    private Node reverseRecursive(Node head) {
+
+        if (head == null || head.next == null) {
+            return head;
+        }
+        Node newHead = reverseRecursive(head.next);
+        head.next.next = head;
+        head.next = null;
+        return newHead;
+    }
+
     public void printlist() {
 
         Node curr = head;
@@ -67,6 +80,11 @@ public class reverseLL {
 
         list.reverse();
         System.out.println("Reversed list:");
+        list.printlist();
+        // reversing the list using recursion
+        list.head = list.reverseRecursive(list.head);
+
+        System.out.println("Reversed list using recursion:");
         list.printlist();
     }
 }
