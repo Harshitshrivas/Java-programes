@@ -1,6 +1,6 @@
 public class sort_0_1_2 {
 
-    static class Node {
+    public static class Node {
         int data;
         Node next;
 
@@ -57,8 +57,6 @@ public class sort_0_1_2 {
         System.out.println("null");
     }
 
-    
-
     public static void main(String[] args) {
 
         Node head = new Node(1);
@@ -69,6 +67,12 @@ public class sort_0_1_2 {
         head.next.next.next.next.next = new Node(1);
         head.next.next.next.next.next.next = new Node(2);
 
-    }
+        System.out.println("Original list ");
+        printList(head);
 
+        head = sort012(head);
+        System.out.println("Sorted list");
+        printList(head);
+
+    }
 }
