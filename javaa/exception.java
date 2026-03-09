@@ -1,8 +1,16 @@
 public class exception {
     public static void main(String[] args) {
-        int a = 10;
-        int b = 0;
+       
+        try {
+            int a = 10;
+            int b = 0;
+            System.out.println(a/b);
+        } catch (ArithmeticException e) {
+            System.out.println("Cannot divide by zero");
+        }finally{
+            System.out.println("Ya tooo hamesha run hogaaa");
+        }
 
-        System.out.println(a/b);
+        System.out.println("Exception Handling");
     }
 }
