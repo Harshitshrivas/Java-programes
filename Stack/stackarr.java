@@ -1,11 +1,11 @@
 public class stackarr {
 
-    static int max = 5;
-    static int[] stack = new int[max];
+    static final int MAX = 5;
+    static int[] stack = new int[MAX];
     static int top = -1;
 
     static void push(int value) {
-        if (top == max - 1) {
+        if (top == MAX - 1) {
             System.out.println("Stack Overflow..");
         } else {
             top++;
@@ -39,7 +39,7 @@ public class stackarr {
     }
 
     static boolean isFull() {
-        return top == max - 1;
+        return top == MAX - 1;
     }
 
     static void displayyy() {
