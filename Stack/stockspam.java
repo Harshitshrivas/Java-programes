@@ -21,7 +21,7 @@ public class stockspam {
 
     public static void main(String[] args) {
         int[] prices = { 7, 1, 5, 3, 6, 4 };
-         System.out.println("The stock      ");
+         System.out.println("The stock span for the given prices is: ");
         maxProfit(prices);
 
     }
