@@ -13,7 +13,7 @@ public class mapp {
         System.out.println(map); // print the entire map
 
         String stu = map.get(3); // yaha mai 3 key ke corresponding value ko get kar raha hu
-        System.out.println(stu); // 
+        System.out.println(stu); //
 
         System.out.println("The map contains key 4: " + map.containsKey(4));
         System.out.println("The map contains value 'Harshu': " + map.containsValue("Harshu"));
@@ -22,5 +22,13 @@ public class mapp {
         for (Integer key : map.keySet()) { // keyset se mai map ke sare keys ko access kar raha hu
             System.out.println("Key: " + key + ", Value: " + map.get(key));
         }
+
+        // remove a key-value pair
+        map.remove(5);
+        System.out.println("After removing key 5: " + map);
+
+        boolean removed = map.remove(4, "Harshuuuuuu"); // agar key 4 ke corresponding value "Harshuuuuuu" hai to hi
+                                                        // remove karega
+        System.out.println("removed: " + removed);
     }
 }
