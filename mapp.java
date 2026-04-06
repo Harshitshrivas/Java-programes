@@ -10,10 +10,12 @@ public class mapp {
         map.put(4, "Harshvardhan");
         map.put(5, "Harsh Rai");
 
-        System.out.println(map);
+        System.out.println(map); // print the entire map
 
-        String stu = map.get(3);
-        System.out.println(stu);
+        String stu = map.get(3); // yaha mai 3 key ke corresponding value ko get kar raha hu
+        System.out.println(stu); // 
 
+        System.out.println("The map contains key 4: " + map.containsKey(4));
+        System.out.println("The map contains value 'Harshu': " + map.containsValue("Harshu"));
     }
 }
