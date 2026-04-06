@@ -11,5 +11,9 @@ public class mapp {
         map.put(5, "Harsh Rai");
 
         System.out.println(map);
+
+        String stu = map.get(3);
+        System.out.println(stu);
+
     }
 }
