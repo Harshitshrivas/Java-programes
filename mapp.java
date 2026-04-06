@@ -17,5 +17,10 @@ public class mapp {
 
         System.out.println("The map contains key 4: " + map.containsKey(4));
         System.out.println("The map contains value 'Harshu': " + map.containsValue("Harshu"));
+
+        // loop
+        for (Integer key : map.keySet()) { // keyset se mai map ke sare keys ko access kar raha hu
+            System.out.println("Key: " + key + ", Value: " + map.get(key));
+        }
     }
 }
