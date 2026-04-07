@@ -30,5 +30,8 @@ public class mapp {
         boolean removed = map.remove(4, "Harshuuuuuu"); // agar key 4 ke corresponding value "Harshuuuuuu" hai to hi
                                                         // remove karega
         System.out.println("removed: " + removed);
+
+       System.out.println("Size of the map: " + map.size()); // size of the map
+
     }
 }
