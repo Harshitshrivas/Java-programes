@@ -33,5 +33,12 @@ public class mapp {
 
        System.out.println("Size of the map: " + map.size()); // size of the map
 
+       map.replace(3, "Harshit Shrivas Updated");
+       System.out.println("After replacing key 3: " + map);
+
+         map.clear(); // clear the map
+         System.out.println("After clearing the map: " + map);
+
+
     }
 }
