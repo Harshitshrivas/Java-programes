@@ -11,3 +11,4 @@ public class sumdigit {
         System.out.println("The sum of digit are : "+ sum);
     }
 }
+ 
