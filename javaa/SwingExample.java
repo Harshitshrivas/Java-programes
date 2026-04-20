@@ -8,7 +8,7 @@ public class SwingExample {
         JButton b = new JButton("Click Me!");
         b.setBounds(50, 50, 80, 60);
         frame.add(b);
-      //frame.setSize(400, 300);
+       frame.setSize(400, 300);
         frame.setLayout(null);
         frame.setVisible(true);
     }
