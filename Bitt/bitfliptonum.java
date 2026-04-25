@@ -9,6 +9,6 @@ public class bitfliptonum {
             count += xor & 1;
             xor >>= 1;
         }
-        System.out.println(" " + count);
+        System.out.println("the Number of Flip are: " + count);
     }
 }
