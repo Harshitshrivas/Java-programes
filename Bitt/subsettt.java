@@ -9,7 +9,7 @@ public class subsettt {
                     System.out.print(arr[j] + " ");
                 }
             }
-            System.out.println( );
+            System.out.println();
         }
     }
 }
