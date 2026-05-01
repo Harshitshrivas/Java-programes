@@ -1,4 +1,4 @@
-public class triangle {
+public class rightangletrain {
     public static void main(String[] args) {
         int row = 5;
 
