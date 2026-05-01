@@ -1,5 +1,5 @@
 
-public class rightangletraing {
+public class rectangle {
     public static void main(String[] args) {
         int row = 4;
         int coloumn = 5;
