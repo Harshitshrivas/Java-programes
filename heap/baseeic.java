@@ -12,5 +12,6 @@ public class baseeic {
         System.out.println("Peek: " + pq.peek());
         System.out.println("Poll: " + pq.poll());
         System.out.println("Priority Queue after poll: " + pq);
+        System.out.println("Size: " + pq.size());
     }
 }
