@@ -1,7 +1,7 @@
 
 import java.util.PriorityQueue;
 
-public class baseeic {
+public class minheap {
     public static void main(String[] args) {
         PriorityQueue<Integer> pq = new PriorityQueue<>(); // Min-heap by default
         pq.add(10);
