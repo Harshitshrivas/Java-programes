@@ -30,6 +30,7 @@ public class ksortedarray {
         for (int i = 0; i < arr.length; i++) { // Printing the sorted array using a loop
             System.out.print(arr[i] + " ");
         }
-
+         // Time Complexity: O(n log k) where n is the number of elements in the array and k is the maximum distance an element can be from its sorted position.
+         // Space Complexity: O(k) for the priority queue that holds at most k+1 elements at any time.
     }
 }
