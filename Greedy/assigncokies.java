@@ -28,7 +28,7 @@ public class assigncokies {
     }
 
     public static void main(String[] args) {
-        int[] g = { 1, 2, 3, 7 }; // y cookies hai jo assign hogi
+        int[] g = { 1, 2, 3, 7 }; 
         // int[] s = {8 , 1, 2 , 4 }; // bina sort kiyee 3 aayega jo ki galat hai , sort
         // karne ke baad 4 aayega jo ki sahi hai , ya jada hona chahiye tab hi assign
         // hoga
