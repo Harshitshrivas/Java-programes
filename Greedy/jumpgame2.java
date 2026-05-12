@@ -10,7 +10,7 @@ public class jumpgame2 {
 
             maxreach = Math.max(maxreach, i + nums[i]);
 
-            if (i == end) {
+            if (i == end) {         // we have reached the end of the current jump
                 jump++;
                 end = maxreach;
             }
