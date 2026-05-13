@@ -10,14 +10,14 @@ public class bootsave {
         int i = 0, j = peeple.length-1;
 
         while( i<= j){
-            if(peeple[i] + peeple[j] <= limit){
+            if(peeple[i] + peeple[j] <= limit){  // if the lightest and heaviest person can share a boat
                 i ++;
                 j--;
-                
             }else{
                 j--;
+                
             }
-            count++;
+            count++;    // we need a boat for the heaviest person, whether they share or not
         }
         System.out.println("count of boats needed: " + count);
     }
