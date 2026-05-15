@@ -4,7 +4,7 @@ public class maxdistance {
         int max = arr[0][arr[0].length - 1];
         int ans = 0;
 
-        for (int[] arr1 : arr) {
+        for (int[] arr1 : arr) {    // for each array in the 2D array
             int currentmin = arr1[0];
             int currentmax = arr1[arr1.length - 1];
             ans = Math.max(ans , Math.abs(currentmin - max));
