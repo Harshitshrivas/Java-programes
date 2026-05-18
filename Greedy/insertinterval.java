@@ -3,8 +3,8 @@ public class insertinterval {
     public static int[][] insert(int intervals[][], int newInterval[]) {
         int ans[][] = new int[intervals.length + 1][2];
         int index = 0;
-        for (int i = 0; i < intervals.length; i++) {
-            if (intervals[i][1] < newInterval[0]) {
+        for (int i = 0; i < intervals.length; i++) {    
+            if (intervals[i][1] < newInterval[0]) {  // no overlap
                 ans[index][0] = intervals[i][0];
                 ans[index][1] = intervals[i][1];
                 index++;
