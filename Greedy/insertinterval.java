@@ -33,7 +33,7 @@ public class insertinterval {
             result[i][0] = ans[i][0];
             result[i][1] = ans[i][1];
         }
-        return result;
+        return result; 
     }
 
     public static void main(String[] args) {
