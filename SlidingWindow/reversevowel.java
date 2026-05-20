@@ -3,7 +3,7 @@ public class reversevowel {
      char [] ch= s.toCharArray();
      int left = 0;
      int right = s.length() -1;
-     while(left < right){
+     while(left < right){   // 2 pointer approach 
         if(!isVowel(ch[left])){
             left ++;
         }else if(!isVowel(ch[right])){
