@@ -6,11 +6,11 @@ public class reversevowel {
      while(left < right){   // 2 pointer approach 
         if(!isVowel(ch[left])){
             left ++;
-        }else if(!isVowel(ch[right])){
+        }else if(!isVowel(ch[right])){   // if right is not vowel then move the right pointer
             right --;
         }
         else {
-            char temp = ch[left];
+            char temp = ch[left];  // swap the vowels
             ch[left] =ch[right];
             ch[right] =temp;
             left ++;
