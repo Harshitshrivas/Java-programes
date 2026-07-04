@@ -3,15 +3,20 @@ import java.util.Scanner;
 
 public class odd {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number: ");
         int num = sc.nextInt();
 
+        System.out.println("Odd and even numbers from 1 to " + num + " are: ");
         
-            if(num % 2 == 0){
-                System.out.println("Even " + num);
-            }else{
-                System.out.println("Odd " + num);
+        for (int i = 1; i <= num; i++) { // ek sath odd aur even dono print karne ke liye
+            if (i % 2 == 0) {
+                System.out.println("Even " + i);
+            } else {
+                System.out.println("Odd " + i);
             }
-        
+        }
+
     }
 }
