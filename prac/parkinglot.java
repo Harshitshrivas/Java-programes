@@ -22,7 +22,7 @@ Constraints:
 
 ### Example:
 
-Input:
+Input: 
 
 4 4
 1 0 1 0
