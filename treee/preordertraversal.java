@@ -23,7 +23,7 @@ public class preordertraversal {
     }
 
     public static void main(String[] args) {
-        
+
         Node root = new Node(1);
         root.left = new Node(2);
         root.right = new Node(3);
@@ -33,7 +33,6 @@ public class preordertraversal {
 
         root.right.left = new Node(6);
         root.right.right = new Node(7);
-
        preorder(root);
     }
 }
