@@ -11,11 +11,12 @@ public class Stringpalind {
         for(int i = str1.length()-1 ; i>=0 ; i--){
             str2 = str2 + str1.charAt(i);
         }
+ 
 
         if(str1.equals(str2)){
-            System.out.println("String is plaindrome ");
+            System.out.println("String is palindrome"); 
         }else{
-            System.out.println("String is nottt");
+            System.out.println("String is not palindrome");
         }
         sc.close();
     }
