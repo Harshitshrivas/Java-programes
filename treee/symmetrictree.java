@@ -1,5 +1,5 @@
 public class symmetrictree {
-  static class Node {
+    static class Node {
         int data;
         Node left;
         Node right;
@@ -10,16 +10,21 @@ public class symmetrictree {
             this.right = null;
         }
     }
-    static boolean isSymmetric(Node root){
+
+    static boolean isSymmetric(Node root) {
         return root == null || isMirror(root.left, root.right);
     }
-    static boolean  isMirror(Node left , Node right){
 
-        if(left == null && right == null) return true;
-        if(left == null || right == null || left.data != right.data) return false;
+    static boolean isMirror(Node left, Node right) {
+
+        if (left == null && right == null)
+            return true;
+        if (left == null || right == null || left.data != right.data)
+            return false;
 
         return isMirror(left.left, right.right) && isMirror(left.right, right.left);
     }
+
     public static void main(String[] args) {
         Node root = new Node(1);
         root.left = new Node(2);
