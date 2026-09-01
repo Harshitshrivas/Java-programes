@@ -1,6 +1,9 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-public class rightview {
+public class leftview {
     public static class Node {
         int data;
         Node left;
@@ -13,19 +16,20 @@ public class rightview {
         }
     }
 
-    public static List<Integer> rightSideView(Node root) {
+    public static List<Integer> leftSideView(Node root) {
+
         Map<Integer, Integer> ans = new HashMap<>();
-        rightView(root, ans, 0);
+        leftView(root, ans, 0);
         return new ArrayList<>(ans.values());
     }
 
-    static void rightView(Node root, Map<Integer, Integer> ans, int level) {
+    static void leftView(Node root, Map<Integer, Integer> ans, int level) {
         if (root == null) {
             return;
         }
         ans.put(level, root.data);
-        rightView(root.left, ans, level + 1);
-        rightView(root.right, ans, level + 1);
+        leftView(root.right, ans, level + 1);
+        leftView(root.left, ans, level + 1);
     }
 
     public static void main(String[] args) {
@@ -38,6 +42,6 @@ public class rightview {
 
         root.right.left = new Node(6);
         root.right.right = new Node(7);
-        System.out.println(rightSideView(root));
+        System.out.println(leftSideView(root));
     }
 }
