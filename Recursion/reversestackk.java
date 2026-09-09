@@ -1,6 +1,7 @@
 import java.util.Stack;
 
 public class reversestackk {
+    @SuppressWarnings("unused")
     public static void insertAtBottom(Stack<Integer> st  , int element){
         if(st.isEmpty()){
             st.push(element);
