@@ -37,7 +37,7 @@ public class infixtopost {
                 st.pop(); // remove '('
             } else {
                 while (!st.isEmpty() && precedence(s.charAt(i)) <= precedence(st.peek())) {
-                    res.append(st.pop());
+                    res.append(st.pop());  
                 }
                 st.push(ch);
             }
