@@ -15,7 +15,7 @@ public class atoi {
         if(i< s.length() && s.charAt(i) == '-'){
            sign = -1;
            i++;
-        }else{
+        }else if(i<s.length() && s.charAt(i) == '+'){
             i++;
         }
 
